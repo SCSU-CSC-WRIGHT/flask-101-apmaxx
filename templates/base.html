@@ -16,10 +16,12 @@
         <div class="image1">
         <img src="{{ url_for('static', filename = 'smile.png') }}">
         </div>
+        <p> Thank you for checking out my website!</p>
     </main>
 
     <footer>
-        <p style="text-align: center;">&copy; 2025 Flask App </p>
+        <p style="text-align: center;"> <i>&copy;&nbsp;<span id="copyright">2025-<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script> </span> Amir's Flask App </p>
     </footer>
 </body>
 </html>
+
