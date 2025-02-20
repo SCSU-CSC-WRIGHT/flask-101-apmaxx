@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My First Flask App </title>
-    <link rel="stylesheet" href="activity3style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'activity3style.css') }}">
 </head>
 <body>
     <header>
@@ -12,14 +12,14 @@
     </header>
 
     <main>
-        <p> Hi! This is my first time using Flask!</p>
+        <p style="text-align: center;"> Hi! This is my first time using Flask!</p>
         <div class="image1">
-        <img src="assets/smile.png">
+        <img src="{{ url_for('static', filename = 'smile.png') }}">
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Flask App</p>
+        <p style="text-align: center;">&copy; 2025 Flask App</p>
     </footer>
 </body>
 </html>
